@@ -1,0 +1,37 @@
+/*Initialize*/
+ul#resign, ul#resign ul.sub_home{
+    padding:0;
+    margin: 0px;
+    float: right;
+    
+}
+ul#resign li, ul#resign ul.sub_home li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+/*Link Appearance*/
+ul#resign li a, ul#resign li ul.sub_home li a {
+    text-decoration: none;
+    color: #fff;
+    background: #666;
+    padding: 2px;
+    display:inline-block;
+}
+/*Make the parent of sub-menu relative*/
+ul#resign li {
+    position: relative;
+}
+/*sub menu*/
+ul#resign li ul.sub_home {
+    display:none;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 0px;
+}
+ul#resign li:hover ul.sub_home{
+    display:block;
+    margin-left: -30px;
+
+    } 
