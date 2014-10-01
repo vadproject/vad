@@ -120,7 +120,7 @@
                                 }
                                 ?>
 
-                                <tr><td>IPDS image :<br></td>
+                                <tr><td>Image :<br></td>
                              <td><form enctype="multipart/form-data" action="uploader.php" method="POST">
                                 <input type="hidden" name="MAX_FILE_SIZE" value="100000" />
                                 <input name="uploadedfile" type="file" />
