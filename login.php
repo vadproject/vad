@@ -23,20 +23,20 @@ session_start();
         </center>
         <input type="submit" name="login" class="enviar" value="Log In">
     </form>
+    <?php
+
+	if(isset($_GET['login_failed']))
+	    {
+	        
+	        echo '<div>Wrong Username or Password</div>';
+	        
+	    }   
+	
+	
+	?>
 </section>
 
 
 </body>
 </html>
 
-<?php
-
-if(isset($_GET['login_failed']))
-    {
-        
-        echo '<script>alert("Wrong Username or Password! Try again.");</script>';
-        
-    }   
-
-
-?>
