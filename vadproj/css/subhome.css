@@ -1,0 +1,33 @@
+/*Initialize*/
+ul#menu, ul#menu ul.sub_home{
+    padding:0;
+    margin: 0;
+    float: left;
+}
+ul#menu li, ul#menu ul.sub_home li {
+    list-style-type: none;
+    display: inline-block;
+}
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub_home li a {
+    text-decoration: none;
+    color: #fff;
+    background: #666;
+    padding: 2px;
+    display:inline-block;
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+}
+/*sub menu*/
+ul#menu li ul.sub_home {
+    display:none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 0px;
+}
+ul#menu li:hover ul.sub_home{
+    display:block;
+     
